@@ -1,52 +1,89 @@
 Open main1.py. Before running it, what do you expect this program to do? 
 
+    I expect the program to check if the current version of Python is 3.7. The program will then clear the screen. 
+    After clearing, the program will then print Greetings! 
+    Then the program will print "What is my favorite color" while asking for a user input.
+
 Now right click on the window and select “Run Python File in Terminal”. Click in the bottom panel, and answer the question. Describe what happened. 
+
+    The file did as expected, with the program terminating after the user input.
 
 What do you think the program did with what you typed?
 
+    I think the program accepted the user input and immediately terminated, as there were no instructions to store or call that data.
 
 
 Open main2.py. Before running it, describe how this is different than main1.py. 
 
+    The program stored the user input in the variable color, then printed color.
+
 What do you think the color = input() will do? 
 
+    It will set the variable color equal to the next user input without printing instructions to the user.
+
 Run the program in the terminal and answer the question. Did the program do what you expected?
+
+    Yes.
 
 
 
 Open main3.py. Before running it, describe how this is different than main2.py. 
 
+    main3.py will check the user input and see if it is equal to 'Red' and print a string according to whether or not the input is equal.
+
 What is happening on lines 11–14? 
+
+    an if else statement that checks the user input.
 
 Why are lines 12 and 14 indented? 
 
+    lines 12 and 14 are part of the if/else statement and trigger if the conditions are met.
+
 Run the program and answer the question. What happens if you don’t capitalize Red? 
+
+    The program prints "Sorry, try again"
 
 What does this tell you about "color"?
 
+    capitalization matters if it is checking strings against each other.
 
 
-Open main4.py. Before running it, describe how this is different than main2.py. 
+Open main4.py. Before running it, describe how this is different than main2.py.
+
+    main4.py will check the user input and see if it is equal to 'Red' or 'red' and print a string according to whether or not the input is equal.
 
 What problem is this trying to solve? 
 
+    The capitalization issue addressed two questions ago.
+
 Run the program and answer the question. What happens if you use some other capitalization scheme (i.e., “RED” or “reD“)?
 
+    The program returns 'Sorry, try again' if the capitalization is RED.
 
 
 Open main5.py. What do you expect line 11 to do? 
 
+    Line 11 takes the inputted string and evaluates the lower form of each character against 'red'
+
 What problem is it trying to solve? 
+
+    The program is trying to address the capitalization problem with the previous two programs.
 
 Run the program and answer the question. What happens if you add spaces before or after the word (i.e., “  RED  “ or “ red”)?
 
-
+    The program returns 'Sorry, try again' if the input is 'RED '.
 
 Open main6.py. How is line 11 different than main5.py? 
 
+    Line 11 strips the input of any empty space, then evaluates it against 'red'
+
 What would you guess .strip() is doing? 
 
+    Strips the input of any empty values or space.
+
 Run the program and answer the question. Is there another way of writing “red” that will break this logic?
+
+    Inputting "RE D" triggers 'Sorry, try again.' It appears as if strip() only omits
 
 
 
