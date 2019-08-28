@@ -83,13 +83,17 @@ What would you guess .strip() is doing?
 
 Run the program and answer the question. Is there another way of writing “red” that will break this logic?
 
-    Inputting "RE D" triggers 'Sorry, try again.' It appears as if strip() only omits
+    Inputting "RE D" triggers 'Sorry, try again.' It appears as if strip() only omits extraneous empty space.
 
 
 
 Open main7.py. Before running this program, how do you expect this to be different than main6.py? 
 
+    main7.py includes a response for pink, which outputs "Close!"
+
 What is the purpose of line 11? 
+
+    line 11 strips the input of any extraneous space and puts the string into lower form characters.
 
 Run the program and answer the question.
 
@@ -97,9 +101,15 @@ Run the program and answer the question.
 
 Open main8.py. What is the purpose of line 11? 
 
+    line 11 is a while statement that will continue to trigger while the user input does not equal 'red'.
+
 Why are lines 12–19 indented? 
 
+    lines 12 - 19 are part of the while loop, and as such are indented once.
+
 Run the program. What would happen if line 12 were moved before line 11 (and no longer indented)? 
+
+    The program would only ask for one input, then continue to loop infinitely if the input is not 'red'. 
 
 Make that change and run the program again. To end any Python program, you can type ctrl-c.
 
@@ -107,10 +117,15 @@ Make that change and run the program again. To end any Python program, you can t
 
 Open main9.py. What is happening on line 12? 
 
+    the while loop checks whether or not the input is equal to 'red', if not, count is added to and another input is asked for
+
 What is the purpose of “count”? 
+
+    to count the number of iterations it took the while loop for the user to input 'red'
 
 What is happening on line 22? 
 
+    22 prints the count, letting the user know how many guesses it took to input 'red'.
 Run the program.
 
 
@@ -119,3 +134,4 @@ Run the program.
 Commit your changes and push them back to the repository. 
 
 Did you do the extra credit?
+Yes!
